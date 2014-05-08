@@ -28,10 +28,6 @@ for n = 1:chunks;
                 holdingTrix(n,1:80) = message(((n-1)*80)+1:((n-1)*80)+80);
         end
 end
-
-disp('holdingTrix');
-disp(char(holdingTrix));
-
 	
 %set up initial matrix scaffold
 
@@ -97,6 +93,7 @@ end
 
 %writing switch
 if 1
+
 %write to file
 %fileName  = 'testFile1.txt'
 %keyName   = 'testKey1.txt'
@@ -109,8 +106,6 @@ fprintf(keyFile,'%x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x \n'
 
 fprintf('\n|<<:|<*!WRITE SUCCESSFUL!*>|:>> \n\n')
 
-
-%They key contains the index value of the final matrix that the elements of 
 %writing switchlet
 end
 

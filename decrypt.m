@@ -39,12 +39,12 @@ keyTrix    = zeros(10*chunks,10);
  
 for n = 1:masterKeyLen/2;
 
-	screenTrix(n) = masterKey(n+(n-1));
+	screenTrix(n) = masterKeyP(n+(n-1));
 end
 
 for n = 1:masterKeyLen/2;
 
-	keyTrix(n)= masterKey(n*2);
+	keyTrix(n)= masterKeyP(n*2);
 end
 
 %run the encrypted matrix through the screen and key
